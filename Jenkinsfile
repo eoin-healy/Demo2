@@ -8,7 +8,7 @@ pipeline {
     }
     stage('TEST') {
       steps {
-        sh 'C:\\Users\\Eoin\\Desktop\\AgileAssign2'
+        sh 'C:\\Program Files (x86)\\Jenkins\\workspace\\Demo2_master-P23TXEWXJIZRUCMMFHO2766MMY7V3ISWN25FJXZFOZKMDIVUWOLQ'
       }
     }
   }
