@@ -3,10 +3,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''#!/bin/bash
+        sh '''sh(\'\'\'#!c:\\path\\to\\bash.exe
 read -p \'Please enter your Username: \' uservar
 echo
-echo "Thank you "+ uservar+ " is your username."'''
+echo "Thank you "+ uservar+ " is your username."
+echo "I am in bash"
+\'\'\')
+'''
       }
     }
   }
