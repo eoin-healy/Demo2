@@ -8,7 +8,10 @@ pipeline {
     }
     stage('TEST') {
       steps {
-        sh 'C:\\Program Files (x86)\\Jenkins\\workspace\\Demo2_master-P23TXEWXJIZRUCMMFHO2766MMY7V3ISWN25FJXZFOZKMDIVUWOLQ'
+        sh '''#!/bin/bash
+read -p \'Please enter your Username: \' uservar
+echo
+echo "Thank you "+ uservar+ " is your username."'''
       }
     }
   }
