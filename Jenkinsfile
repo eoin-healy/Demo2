@@ -1,12 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Initialize') {
       steps {
-        retry(count: 2) {
-          sh 'echo %username%'
-        }
-        
+        echo 'Print me test'
       }
     }
   }
