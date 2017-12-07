@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        sh '''echo %username%
-
-'''
+        sh 'testBlue1.sh'
       }
     }
   }
