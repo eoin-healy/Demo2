@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        echo 'Print me test'
+        sh '''echo %username%
+
+'''
       }
     }
   }
